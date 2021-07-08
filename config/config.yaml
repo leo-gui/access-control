@@ -1,0 +1,39 @@
+# system configuration
+system:
+  env: 'dev'
+  addr: 8080
+  db-type: 'mysql'
+
+
+# mysql connect configuration
+mysql:
+  path: '127.0.0.1:3306'
+  config: 'parseTime=true'
+  db-name: 'acc_db'
+  username: 'root'
+  password: '12345678'
+  max-idle-conns: 10
+  max-open-conns: 100
+  log-mode: false
+  tablename: 'api_config'
+
+
+#redis connect configuration
+redis :
+  db: 0
+  addr: '127.0.0.1:6379'
+  password: '12345678'
+
+
+#CONST
+const:
+  capacity: 10
+  prodTokenIntervalMs: 100
+  prodTokenNumEveryInterval: 1
+
+
+
+
+
+
+
