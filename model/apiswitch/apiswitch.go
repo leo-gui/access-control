@@ -19,7 +19,7 @@ type Property struct {
 }
 
 
-func ApiSwitch(p *Property) error{
+func ApiCreate(p *Property) error{
 	return db.GormCoon().Table(TableName()).Create(&p).Error
 }
 

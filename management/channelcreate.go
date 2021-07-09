@@ -1,25 +1,24 @@
 package management
 
+import "C"
 import (
-	"access-control/model/apiswitch"
+	"access-control/model/channel"
 	"github.com/gin-gonic/gin"
 	"net/http"
 )
 
-
-func ApiCreate(ctx *gin.Context){
+func ChannelCreate(ctx *gin.Context){
 	var (
 		err error
-		property apiswitch.Property
+		c channel.Channel
 	)
-	if err = ctx.ShouldBind(&property);err != nil{
+	if err = ctx.ShouldBind(&c);err != nil{
 		ctx.JSON(http.StatusBadRequest,gin.H{"code":"0","msg":"参数错误"})
 		return
 	}
-	if err = apiswitch.ApiCreate(&property);err != nil{
+	if err = channel.ChannelCreate(&c);err != nil{
 		ctx.JSON(http.StatusInternalServerError,gin.H{"code":10086,"msg":"创建失败"})
 		return
 	}
 	ctx.JSON(http.StatusOK,gin.H{"code":0,"msg":"创建成功"})
 }
-
