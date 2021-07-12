@@ -20,13 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0abfce53-5792-457d-af4f-d5495f5183ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/management/withelimit.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/management/withelistcreate.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/management/apicreate.go" beforeDir="false" afterPath="$PROJECT_DIR$/management/apicreate.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/channel/channel.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/channel/channel.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/withelist/witheList.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/withelist/witheList.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/route.go" beforeDir="false" afterPath="$PROJECT_DIR$/routes/route.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
