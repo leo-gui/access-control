@@ -7,7 +7,7 @@ import (
 	"github.com/wonderivan/logger"
 )
 
-func witheLimit(ctx *gin.Context){
+func WitheLimit(ctx *gin.Context){
 	var (
 		w withelist.WitheList
 		err error

@@ -14,6 +14,6 @@ func SetRoute(engine *gin.Engine){
 		apiRoute.POST("/createChannel",management.ChannelCreate)
 		apiRoute.POST("/createWitheList",management.WitheCreate)
 		apiRoute.POST("/rateLimit",management.ApiRateLimit)
-		apiRoute.POST("/witheLimit",management.ApiRateLimit)
+		apiRoute.POST("/witheLimit",management.WitheLimit)
 	}
 }
