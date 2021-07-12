@@ -21,7 +21,7 @@ func TableName() string{
 }
 
 func ChannelCreate(c *Channel) error{
-	return db.GormCoon().Table(TableName()).Create(&c).Error
+	return db.GormCoon().Table("channel_list").Create(&c).Error
 }
 
 func ChannelList(p *apiswitch.Property) (res Channel,err error){

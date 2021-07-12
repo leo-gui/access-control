@@ -17,9 +17,9 @@ func ApiCreate(ctx *gin.Context){
 		return
 	}
 	if err = apiswitch.ApiCreate(&property);err != nil{
-		ctx.JSON(http.StatusInternalServerError,gin.H{"code":10086,"msg":"创建失败"})
+		ctx.JSON(http.StatusInternalServerError,gin.H{"code":"0","msg":"创建失败"})
 		return
 	}
-	ctx.JSON(http.StatusOK,gin.H{"code":0,"msg":"创建成功"})
+	ctx.JSON(http.StatusOK,gin.H{"code":"0","msg":"创建成功"})
 }
 
