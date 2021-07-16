@@ -15,10 +15,14 @@ func GormCoon() (db *gorm.DB) {
 		logger.Alert("数据库连接失败")
 		return nil
 	} else {
-		sqlDB:= db.DB()
-		sqlDB.SetMaxIdleConns(m.MaxIdleConns)
-		sqlDB.SetMaxOpenConns(m.MaxOpenConns)
-		return db
+		sqlDB := db.DB()
+		if err := sqlDB.Ping(); err == nil {
+			sqlDB.SetMaxIdleConns(m.MaxIdleConns)
+			sqlDB.SetMaxOpenConns(m.MaxOpenConns)
+			return db
+		}else {
+			return nil
+		}
 	}
 }
 
